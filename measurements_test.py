@@ -3,7 +3,8 @@ import measurements
 from datetime import datetime
 
 
-def mapDictResultToList(result):
+def mapDictResultToList(result: dict[measurements.MeasType,
+                        list[measurements.Measurement]]) -> list[measurements.Measurement]:
     resultToList = []
     for key, value in result.items():
         temp = [key, value]
