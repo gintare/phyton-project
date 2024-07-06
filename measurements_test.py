@@ -12,7 +12,7 @@ def mapDictResultToList(result):
     return resultToList
 
 
-class LearnTest(unittest.TestCase):
+class MeasurementTest(unittest.TestCase):
 
     def test_sampleMeasurements(self):
         filename = 'unsampled_measurements_test.txt'

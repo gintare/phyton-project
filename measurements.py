@@ -30,9 +30,9 @@ class Measurement:
 
 
 def parseLine(line: str) -> Measurement:
-    stripped_string = line.strip("{").strip()
-    stripped_string1 = stripped_string[:-1]
-    parts = stripped_string1.strip().split(',')
+    strippedString = line.strip("{").strip()
+    strippedString = strippedString[:-1]
+    parts = strippedString.strip().split(',')
     date = datetime.strptime(parts[0], "%Y-%m-%dT%H:%M:%S")
     measType = MeasType.from_str(parts[1].strip())
     value = float(parts[2].strip())
